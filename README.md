@@ -243,3 +243,5 @@ update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in aut
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor (editor) in auto mode
 root@14801ba53858:/test# 
 ```
+
+![](/ezgif.com-gif-maker.gif)
