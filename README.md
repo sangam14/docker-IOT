@@ -1,6 +1,7 @@
 # Docker-IOT Using Arduino Uno And Johnny-Five Tranform Your IOT Platform to Next level 
+![](/Webp.net-resizeimage.jpg)
 
-Prerequisites
+# Prerequisites
 
 At least an Arduino or compatible board (Uno, Mega, Leonardo, Fio, Pro, Pro Mini)
 
@@ -13,13 +14,13 @@ Arduino Pro Mini
 TinyDuino
 ```
 Sparkfun Inventor's Kit (Recommended for getting started)
-OSX
+# OSX
 ````
 Install Node.js >= 0.10.x
 Install Xcode
 Install node-gyp npm install -g node-gyp
 ````
-Windows
+# Windows
 
 Via @ThomasDeutsch on https://github.com/rwldrn/johnny-five/issues/48#issuecomment-7696662
 ```
@@ -27,19 +28,19 @@ Install Node.js >= 0.10.x 32 bit (unless anyone can confirm success with 64 bit)
 npm --add-python-to-path install --global --production windows-build-tools
 Install node-gyp npm install -g node-gyp
 ```
-Ubuntu and Debian
+# Ubuntu and Debian
 ```
 Install Node.js >= 0.10.x apt-get install nodejs
 Install the nodejs-legacy package apt-get install nodejs-legacy
 Install build-essential or a suitable alternative apt-get install build-essential
 ```
-Arch Linux
+# Arch Linux
 ```
 Install Node.js pacman -S nodejs
 Install Arduino Libraries (for firmware flashing) pacman -S arduino
 
 ```
-Hello World
+# Hello World
 
 Generally Arduino boards (Uno, Mega, Leonardo, Fio, Mini) come pre-flashed with the compiled StandardFirmata firmware. In most cases, getting started is as simple as...
 ```
@@ -66,7 +67,7 @@ Make sure the board is plugged into your host machine (desktop, laptop, raspberr
 node strobe.js
 Troubleshooting
 ```
-Firmware
+# Firmware
 
 The StandardFirmataPlus firmware is the one that is used for Johnny-Five to communicate with the board. That means you have to install it first, then you can execute the nodejs programs. Arduiono IDE
 ```
@@ -139,7 +140,11 @@ Stop your Docker VM
 ```$ docker-machine stop local ```
 Now, open VirtualBox
 
+![](/vm1.png)
+
 Go to settings and mount your Arduino
+
+![](/vm2.png)
 ```
 Biradars-Air-2:~ sangam$ docker run -ti --privileged node /bin/bash
 Unable to find image 'node:latest' locally
